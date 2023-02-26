@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Up and Down</title>
+    <style>
+        button{
+            color: blue;
+            height: 20px;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+<h2>Up or Down</h2>
+<input type="number" id="number" value="0">
+<button type="button" onclick="up();">Up</button>
+<button type="button" onclick="down();">Down</button>
+<script>
+    function up() {
+        let a = parseInt(document.getElementById('number').value);
+        document.getElementById('number').value = a + 2;
+    }
+
+    function down() {
+        let a = parseInt(document.getElementById('number').value);
+        document.getElementById('number').value = a - 2;
+    }
+</script>
+</body>
+</html>
